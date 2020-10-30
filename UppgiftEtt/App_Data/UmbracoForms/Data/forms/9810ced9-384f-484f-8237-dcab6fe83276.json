@@ -1,0 +1,253 @@
+{
+  "name": "Contact Form",
+  "created": "2020-10-30T13:54:48.1252231+01:00",
+  "pages": [
+    {
+      "fieldSets": [
+        {
+          "caption": "Consent",
+          "sortOrder": 0,
+          "id": "6683cfcb-9b3d-4b0e-b6b2-873a6d457a39",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": null,
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "Consent for storing submitted data",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "dataConsent",
+                  "id": "62b9356b-f6d3-43c0-a20f-ee1d5cc86942",
+                  "fieldTypeId": "a72c9df9-3847-47cf-afb8-b86773fd12cd",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": "Consent is required to store and process the data in this form.",
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "AcceptCopy": "Yes, I give permission to store and process my data"
+                  },
+                  "preValues": null,
+                  "allowedUploadTypes": null
+                }
+              ]
+            }
+          ],
+          "condition": null
+        },
+        {
+          "caption": "Contact information",
+          "sortOrder": 0,
+          "id": "834af33d-4702-48d8-f504-832aaf775682",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": "",
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "What is your first name",
+                  "tooltip": "",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "whatIsYourFirstName",
+                  "id": "aaaf8494-a6db-434d-e0a1-fc1777287823",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "John"
+                  },
+                  "preValues": [],
+                  "allowedUploadTypes": null
+                },
+                {
+                  "caption": "What is your last name",
+                  "tooltip": "",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "whatIsYourLastName",
+                  "id": "15099629-506d-43d9-d5e0-87ad5a7cb401",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "Doe"
+                  },
+                  "preValues": [],
+                  "allowedUploadTypes": null
+                },
+                {
+                  "caption": "What is your email",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "whatIsYourEmail",
+                  "id": "052c485d-525a-49e4-e4f5-cd967295e855",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "john.doe@nomail.com"
+                  },
+                  "preValues": [],
+                  "allowedUploadTypes": null
+                }
+              ]
+            }
+          ],
+          "condition": null
+        },
+        {
+          "caption": "Opinion",
+          "sortOrder": 0,
+          "id": "2712d7f4-7d53-4424-9f3f-e8c5714dfe5e",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": "",
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "What is your opinion on my page?",
+                  "tooltip": "",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "whatIsYourOpinionOnMyPage",
+                  "id": "8a4e5f5c-9155-46fc-990d-5b4dc4258018",
+                  "fieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "Placeholder": "Please write something nice",
+                    "DefaultValue": ""
+                  },
+                  "preValues": [],
+                  "allowedUploadTypes": null
+                },
+                {
+                  "caption": "It's a very nice page",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "itSAVeryNicePage",
+                  "id": "177d8404-d93e-48e5-b260-05cbfc870657",
+                  "fieldTypeId": "903df9b0-a78c-11de-9fc1-db7a56d89593",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": [],
+                  "allowedUploadTypes": null
+                }
+              ]
+            }
+          ],
+          "condition": null
+        }
+      ],
+      "caption": "FormPage",
+      "sortOrder": 0,
+      "id": "00000000-0000-0000-0000-000000000000",
+      "form": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "id": "9810ced9-384f-484f-8237-dcab6fe83276",
+  "fieldIndicationType": "MarkMandatoryFields",
+  "indicator": "*",
+  "showValidationSummary": false,
+  "hideFieldValidation": false,
+  "requiredErrorMessage": "Please provide a value for {0}",
+  "invalidErrorMessage": "Please provide a valid value for {0}",
+  "messageOnSubmit": "Thank you",
+  "goToPageOnSubmit": 0,
+  "xPathOnSubmit": null,
+  "manualApproval": false,
+  "storeRecordsLocally": true,
+  "cssClass": null,
+  "disableDefaultStylesheet": false,
+  "useClientDependency": false,
+  "workflows": [
+    "9e44860b-92e4-4219-b777-ad10fe2a763d"
+  ],
+  "datasource": null,
+  "submitLabel": "Submit",
+  "nextLabel": "Next",
+  "prevLabel": "Previous"
+}
