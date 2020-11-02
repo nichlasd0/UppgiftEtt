@@ -1,21 +1,24 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.SimpleContentPage>
-@using ContentModels = Umbraco.Web.PublishedModels;
-@{
-	Layout = "Master.cshtml";
-}
-<!-- Main -->
-<section id="main" class="wrapper">
-    <div class="container">
+    @using ContentModels = Umbraco.Web.PublishedModels;
+    @{
+    Layout = "Master.cshtml";
+    }
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="container">
 
-        <header class="major special">
-            <h2>@Model.Value("pageTitle")</h2>
+            <header class="major special">
+                <h2>@Model.Value("pageTitle")</h2>
 
-        </header>
+            </header>
+            <div class="row">
+                <div class="col"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4020.2157649601986!2d12.853399074009092!3d56.67358975784939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2626bb1651dffa7!2sSystembolaget!5e0!3m2!1ssv!2sse!4v1604320838466!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
 
-        <a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-        @Model.Value("bodyText")
-    </div>
-   <div class="form" "col-md-6">
-               @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="9810ced9-384f-484f-8237-dcab6fe83276", FormTheme="bootstrap3-horizontal", ExcludeScripts="0"})
+                <div class="form" "col">
+                  @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="9810ced9-384f-484f-8237-dcab6fe83276", FormTheme="", ExcludeScripts="0"})
+                </div>
+                @Model.Value("bodyText")
             </div>
-</section>
+        </div>
+
+    </section>

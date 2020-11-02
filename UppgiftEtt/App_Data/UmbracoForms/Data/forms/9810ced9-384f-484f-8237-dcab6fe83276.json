@@ -189,7 +189,7 @@
                   "allowedUploadTypes": null
                 },
                 {
-                  "caption": "It's a very nice page",
+                  "caption": "Is this a nice page?",
                   "tooltip": null,
                   "placeholder": null,
                   "cssClass": null,
@@ -213,7 +213,9 @@
                   "settings": {
                     "DefaultValue": ""
                   },
-                  "preValues": [],
+                  "preValues": [
+                    "Yes it is a very nice page"
+                  ],
                   "allowedUploadTypes": null
                 }
               ]
