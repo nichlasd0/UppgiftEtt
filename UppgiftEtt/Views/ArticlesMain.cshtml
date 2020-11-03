@@ -1,29 +1,42 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ArticlesMain>
-@using ContentModels = Umbraco.Web.PublishedModels;
-@{
-	Layout = "Master.cshtml";
-}
-<!-- Main -->
-<section id="main" class="wrapper">
-    <div class="container">
+    @using ContentModels = Umbraco.Web.PublishedModels;
+    @{
+    Layout = "Master.cshtml";
+    }
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="container">
 
-@{
-	var selection = Umbraco.Content(Guid.Parse("74f619ed-87da-4753-a720-721a3205aa5b"))
-    .ChildrenOfType("articlesItem")
-    .Where(x => x.IsVisible())
-    .OrderByDescending(x => x.CreateDate);
-}
-<ul>
-	@foreach (var item in selection)
-	{
-    <article class="special">
-        <div class="articletitle"><a href="@item.Url">@item.Name</a></div>
-        <div class="articlepreview">@Html.Truncate(item.Value("articleContent").ToString(), 20, true)<a href="@item.Url">Read More..</a></div>
-    </article>
-<hr/>
-	}
-</ul>
+            @{
+            var selection = Umbraco.Content(Guid.Parse("74f619ed-87da-4753-a720-721a3205aa5b"))
+            .ChildrenOfType("articlesItem")
+            .Where(x => x.IsVisible())
+            .OrderByDescending(x => x.CreateDate);
+            }
+            <ul>
+                @foreach (ContentModels.ArticlesItem item in selection)
+                {
+                <article class="special">
+                    @try
+                    {
+                    <div>
+                        <img src="@item.Image.Url" style="width:200px" />
+                    </div>
+                    }
+                    catch (Exception e)
+                    {
+                    }
+                    <div class="articletitle">
+                        <a href="@item.Url">@Html.Truncate(item.Value("articleItem").ToString(), 20, true)</a>
+                    </div>
+                    <div class="articlepreview">@Html.Truncate(item.Value("articleContent").ToString(), 20, true)</div>
+                </article>
+                <hr />
+                }
+                <hr />
+                
+            </ul>
 
 
-    </div>
-</section>
+        </div>
+    </section>

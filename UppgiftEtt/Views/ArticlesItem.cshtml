@@ -2,17 +2,16 @@
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
 	Layout = "Master.cshtml";
+    var image = Model.Value<IPublishedContent>("image");
 }
+
 <!-- Main -->
 <section id="main" class="wrapper">
     <div class="container">
-
-        <header class="major special">
-            <h2>@Model.Value("pageTitle")</h2>
-
-        </header>
-
-        <a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-        @Model.Value("bodyText")
+        <div class="row">
+            <div class="col"><h2>@Model.Value("articleItem")</h2>
+                @Model.Value("articleContent")</div>
+            <div class ="col"><img src="@image.Url" width="200" height="350" alt="@Model.Value("Name") image" /></div> 
+        </div>
     </div>
 </section>

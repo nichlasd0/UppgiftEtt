@@ -12,7 +12,7 @@
 				<h2>@Model.Value("pageTitle")</h2>
 				<p>@Model.Value("bodyText")</p>
 				<ul class="actions">
-					<li><a href="#" class="button big special">Learn More</a></li>
+					@* <li><a href="#" class="button big special">Learn More</a></li> *@
 				</ul>
 			</section>
 
@@ -22,11 +22,11 @@
 					<article class="feature left">
 						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 						<div class="content">
-							<h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
+							<h2>@Model.Value("contactPageTitle")</h2>
 							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
 							<ul class="actions">
 								<li>
-									<a href="#" class="button alt">More</a>
+									<a href="/contact-us" class="button alt">Contact us</a>
 								</li>
 							</ul>
 						</div>
@@ -34,11 +34,11 @@
 					<article class="feature right">
 						<span class="image"><img src="images/pic02.jpg" alt="" /></span>
 						<div class="content">
-							<h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
+							<h2>Look at our products</h2>
 							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
 							<ul class="actions">
 								<li>
-									<a href="#" class="button alt">More</a>
+									<a href="/articles" class="button alt">Products</a>
 								</li>
 							</ul>
 						</div>
