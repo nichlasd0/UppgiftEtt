@@ -301,6 +301,7 @@
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Partials\_Login.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +309,8 @@
     <Compile Include="App_Start\UmbracoCustomOwinStartup.cs" />
     <Compile Include="App_Start\UmbracoGoogleAuthExtensions.cs" />
     <Compile Include="App_Start\UmbracoStandardOwinStartup.cs" />
+    <Compile Include="Controller\MemberController.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

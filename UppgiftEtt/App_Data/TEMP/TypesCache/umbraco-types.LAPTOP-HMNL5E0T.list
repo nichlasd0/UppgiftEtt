@@ -309,6 +309,7 @@ Umbraco.ModelsBuilder.Embedded.BackOffice.MediaTypeModelValidator, Umbraco.Model
 Umbraco.ModelsBuilder.Embedded.BackOffice.MemberTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+UppgiftEtt.Controller.MemberController, UppgiftEtt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Web.Trees.DataSourceTreeController, Umbraco.Forms.Web, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Web.Trees.EmailTemplateTreeController, Umbraco.Forms.Web, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Web.Trees.FormTreeController, Umbraco.Forms.Web, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
@@ -408,6 +409,7 @@ Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Cult
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+UppgiftEtt.Controller.MemberController, UppgiftEtt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Web.Controllers.UmbracoFormsController, Umbraco.Forms.Web, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.Mvc.IRenderMvcController
@@ -516,6 +518,7 @@ Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Cult
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+UppgiftEtt.Controller.MemberController, UppgiftEtt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Web.Controllers.UmbracoFormsController, Umbraco.Forms.Web, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Dashboards.IDashboard
@@ -717,7 +720,4 @@ Umbraco.Forms.Core.Providers.WorkflowTypes.SendEmail, Umbraco.Forms.Core.Provide
 Umbraco.Forms.Core.Providers.WorkflowTypes.SendRazorEmail, Umbraco.Forms.Core.Providers, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Core.Providers.WorkflowTypes.SendXsltEmail, Umbraco.Forms.Core.Providers, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Core.Providers.WorkflowTypes.Slack, Umbraco.Forms.Core.Providers, Version=8.5.4.0, Culture=neutral, PublicKeyToken=null
-
-Umbraco.Core.Deploy.IServiceConnector
-
 

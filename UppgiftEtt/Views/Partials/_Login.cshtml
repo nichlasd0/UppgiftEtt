@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<UppgiftEtt.Models.LoginViewModel>
+@using Umbraco.Web;
+
+@if (!Umbraco.MemberIsLoggedOn())
+{
+    using (Html.BeginUmbracoForm("SubmitLogin", "Member", System.Web.Mvc.FormMethod.Post, new {id = "login"}))
+    {
+        @Html.AntiForgeryToken()
+        
+        <div style="margin:auto;width:30%;padding:10px;">
+
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName, new {placeholder = "Username"})
+            <br>
+            @Html.LabelFor(m => m.Password)
+            @Html.TextBoxFor(m => m.Password, new {placeholder = "Password"})
+            <br>
+            <button name="login" type="submit"></button>
+        </div>
+    }
+}
