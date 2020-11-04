@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.MembersOnlyError>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<section id="main" class="wrapper">
+    <div class="container">
+
+            <header class="major special">
+                <h2>@Model.Value("PageTitle")</h2>
+                <p>@Model.Value("bodyText")</p>
+            </header>
+            <div style="margin:auto;width:30%;padding:10px;">
+                <a href="/register">Register</a>
+                <a href="/login">Login</a>
+            </div>
+    </div>
+</section>
