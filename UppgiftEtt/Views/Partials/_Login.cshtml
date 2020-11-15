@@ -13,9 +13,9 @@
             @Html.TextBoxFor(m => m.UserName, new {placeholder = "Username"})
             <br>
             @Html.LabelFor(m => m.Password)
-            @Html.TextBoxFor(m => m.Password, new {placeholder = "Password"})
+            @Html.PasswordFor(m => m.Password, new {placeholder = "Password"})
             <br>
-            <button name="login" type="submit"></button>
+            <button name="login" type="submit">Login</button>
         </div>
     }
 }

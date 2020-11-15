@@ -1,0 +1,18 @@
+{
+  "id": "3b9548ac-3b1f-4bc8-b7a8-0dd2abae37a5",
+  "name": "Send email",
+  "form": "9810ced9-384f-484f-8237-dcab6fe83276",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "e96badd7-05be-4978-b8d9-b3d733de70a5",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "nichlasd@gmail.com",
+    "SenderEmail": "",
+    "ReplyToEmail": "",
+    "Subject": "",
+    "Message": "A form has been sent",
+    "Attachment": ""
+  },
+  "sortOrder": 0
+}

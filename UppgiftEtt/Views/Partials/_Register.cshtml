@@ -3,35 +3,14 @@
 @using ClientDependency.Core.Mvc
 @using Umbraco.Web
 @using Umbraco.Web.Controllers
-@using Umbraco.Web.Services
+@using Umbraco.Core.Services
 
 
 @{
-    @*
-        You can specify a custom member type alias in the constructor, the default is 'Member'
-        for example, to use 'Custom Member' you'd use this syntax:
-
-        var registerModel = Members.CreateRegistrationModel("Custom Member");
-    *@
 
     var registerModel = Members.CreateRegistrationModel();
 
-    @*
-        Configurable here:
-
-        registerModel.RedirectUrl       - Optional. What path to redirect to if registration is successful.
-                                          By default the member will be redirected to the current umbraco page
-                                          unless this is specified.
-
-        registerModel.UsernameIsEmail   - the default is true
-                                          if you want the username to be different from the email
-                                          address, set this to true and add a new Username field in
-                                          the form below
-
-                                          @Html.LabelFor(m => registerModel.Username)
-                                          @Html.TextBoxFor(m => registerModel.Username)
-                                          @Html.ValidationMessageFor(m => registerModel.Username)
-    *@
+    registerModel.UsernameIsEmail = false;
 
     Html.EnableClientValidation();
     Html.EnableUnobtrusiveJavaScript();
@@ -47,8 +26,8 @@
 
 @if (success)
 {
-    var member = MemberShip.GetUser();
-    IMemberService memberService = Services.MemberServie;
+    var member = Membership.GetUser();
+    IMemberService memberService = Services.MemberService;
     memberService.AssignRole((int)member.ProviderUserKey, "ActiveMembers");
     @* This message will show if registerModel.RedirectUrl is not defined (default) *@
     <p>Registration succeeded.</p>
@@ -61,7 +40,11 @@ else
             @* <legend>Register Member</legend> *@
 
             @Html.ValidationSummary("registerModel", true)
-
+            
+            @Html.LabelFor(m => registerModel.Username)
+            @Html.TextBoxFor(m => registerModel.Username)
+            @Html.ValidationMessageFor(m => registerModel.Username)
+            <br />
             @Html.LabelFor(m => registerModel.Name)
             @Html.TextBoxFor(m => registerModel.Name)
             @Html.ValidationMessageFor(m => registerModel.Name)
